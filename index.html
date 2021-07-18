@@ -7,21 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandon Wharton</title>
     <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
-    <link href="./vendors/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./vendors/bootstrap.css">
+    <link rel="stylesheet" href="./vendors/font-awesome.min.css">
+    <!-- <link href="./vendors/bootstrap.min.css" rel="stylesheet"> -->
     <link href="./style.css" rel="stylesheet">
     <script src="vendors/jquery-uncompressed.js"></script>
     <script src="vendors/bootstrap.js"></script>
 </head>
 
 <body>
+    <nav class=></nav>
     <header class="header-splash">
         <h1>Brandon Wharton</h1>
         <h2>Full Stack Software Engineer</h2>
     </header>
     <main>
-        <section class="portfolio">
+        <section class="about-me">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Continued improvement and a dedication to growth are a cornerstone to how I approach work and life. Gains can come in many forms, 
+                        and it's usually the small but persistent steps toward excellence that help achieve goals. If I'm not helping solve problems by 
+                        writing software, you can often find me climbing rocks or attempting to outsmart my friends playing Magic.
+                    </p>
+                    <a href="https://www.linkedin.com/in/brandon-wharton-1450/" target="_blank">
+                        <i class="icon-linkedin">
+
+                        </i>
+                    </a>
+                </div>
+                <div class="about-img">
+                    <img src="images/headshot.jpeg" alt="Brandon Wharton headshot" width="175" height="175">
+                </div>
+        </section>
+    
+    </main>
+    <footer>
+        <p>Built by Brandon Wharton 2020</p>
+    </footer>
+</body>
+
+</html>
+
+        <!-- Some initial work on using modals -->
+        <!-- <section class="portfolio">
             <h2>Portfolio</h2>
-            <!-- Modal images -->
+  
             <div class="container" id="gallery">
                 <img src="portfolio/mnbeerflow-screenshot.png" alt="Brandon Wharton's MN Beer Flow project"
                     class="img-thumbnail image-tall" data-toggle="modal" data-target="#mnbeerflowModal">
@@ -33,26 +63,23 @@
                     class="img-thumbnail image-wide" data-toggle="modal" data-target="#reactGalleryModal">
             </div>
 
-            <!-- Modals -->
+
             <div class="modal fade" id="mnbeerflowModal" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="mnbeerflowModalLabel">MN Beer Flow</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+
+                        <div class="close-modal" data-dismiss="modal">
+                            <img src="vendors/icons/x.svg" alt="close icon">
                         </div>
-                    </div>
-                    <div class="modal-body">
-                        <div>
-                            <img src="portfolio/mnbeerflow-screenshot.png" alt="Brandon Wharton's MN Beer Flow project">
+                        <div class="modal-body">
+                            <div>
+                                <img src="portfolio/mnbeerflow-screenshot.png" alt="Brandon Wharton's MN Beer Flow project">
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn primary">Save Changes</button>
-                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn primary">Save Changes</button>
+                        </div>
+
                 </div>
             </div>
 
@@ -124,11 +151,3 @@
 
 
         </section>
-
-    </main>
-    <footer>
-        <p>Built by Brandon Wharton 2020</p>
-    </footer>
-</body>
-
-</html>

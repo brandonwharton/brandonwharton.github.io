@@ -11,11 +11,22 @@ html, body {
     background-image: url("./vendors/background-image.jpeg");
     background-size: 100% auto;
     text-align: center;
-}
-
-.header-splash h1, h2 {
     color: white;
 }
+
+.about-me {
+    display: flex;
+    background-color: #6687a6;
+}
+
+.about-text {
+    margin-left: 20px;
+}
+
+.about-img {
+    margin: 20px;
+}
+
 
 .portfolio {
     display: flex;
@@ -27,6 +38,10 @@ html, body {
     margin: 5% 5% 0 5%;
     width: 90%;
     background-color: white;
+}
+
+.modal-body {
+    width: 100%;
 }
 
 .image-tall {
