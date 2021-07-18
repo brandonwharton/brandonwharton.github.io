@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandon Wharton</title>
     <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
-    <link href="./vendors/bootstrap.css" rel="stylesheet">
+    <link href="./vendors/bootstrap.min.css" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
-    
+    <script src="vendors/jquery-uncompressed.js"></script>
+    <script src="vendors/bootstrap.js"></script>
 </head>
+
 <body>
-    <header>
+    <header class="header-splash">
         <h1>Brandon Wharton</h1>
+        <h2>Full Stack Software Engineer</h2>
     </header>
-    <main></main>
+    <main>
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="container" id="gallery" data-toggle="modal" data-target="#parentModal">
+                <img id="img1" src="portfolio/mnbeerflow-screenshot.png" alt="Brandon Wharton's MN Beer Flow project"
+                    class="img-thumbnail image-tall" data-target="#mnbeerflowModal">
+                <img src="portfolio/movies-screenshot.png" alt="Brandon Wharton's Movie List Update project"
+                    class="img-thumbnail image-wide">
+                <img src="portfolio/feedback-form-screenshot.png" alt="Brandon Wharton's Daily-Feedback-From project"
+                    class="img-thumbnail image-wide">
+                <img src="portfolio/gallery-screenshot.png" alt="Brandon Wharton's React-Photo-Gallery project"
+                    class="img-thumbnail image-wide">
+            </div>
+            <div class="modal fade" id="parentModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <h5 class="modal-title" id="mnbeerflowModalLabel">MN Beer Flow</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="mnbeerflowModal">
+                            <h6>This is a modal!</h6>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn primary">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
     <footer>
         <p>Built by Brandon Wharton 2020</p>
     </footer>
 </body>
+
 </html>
