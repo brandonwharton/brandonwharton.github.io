@@ -16,33 +16,55 @@
 </head>
 
 <body>
-    <nav class=></nav>
+    <nav class="nav-header">
+        <a class="nav-item" href="#about">About</a>
+        <a class="nav-item" href="#portfolio">Portfolio</a>
+    </nav>
     <header class="header-splash">
-        <h1>Brandon Wharton</h1>
-        <h2>Full Stack Software Engineer</h2>
+        <div class="header-text">
+            <h1>Brandon Wharton</h1>
+            <h2>Full Stack Software Engineer</h2>
+        </div>
     </header>
     <main>
-        <section class="about-me">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>Continued improvement and a dedication to growth are a cornerstone to how I approach work and life. Gains can come in many forms, 
-                        and it's usually the small but persistent steps toward excellence that help achieve goals. If I'm not helping solve problems by 
-                        writing software, you can often find me climbing rocks or attempting to outsmart my friends playing Magic.
-                    </p>
-                    <a href="https://www.linkedin.com/in/brandon-wharton-1450/" target="_blank">
-                        <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://github.com/brandonwharton" target="_blank">
-                        <i class="fa fa-github fa-4x" aria-hidden="true"></i>
-                    </a>
-                    <a href="mailto:whartonbm@gmail.com" target="_blank">
-                        <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
-                    </a>
-
-                </div>
-                <div class="about-img">
-                    <img src="images/headshot.jpeg" alt="Brandon Wharton headshot" width="175" height="175">
-                </div>
+        <section class="about-me" id="about">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Continued improvement and a dedication to growth are a cornerstone to how I approach work and life. Gains can come in many forms, 
+                    and it's usually the small but persistent steps toward excellence that help achieve goals. If I'm not helping solve problems by 
+                    writing software, you can often find me climbing rocks or attempting to outsmart my friends playing Magic.
+                </p>
+                <a href="https://www.linkedin.com/in/brandon-wharton-1450/" target="_blank">
+                    <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/brandonwharton" target="_blank">
+                    <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:whartonbm@gmail.com" target="_blank">
+                    <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="about-img">
+                <img src="images/headshot.jpeg" alt="Brandon Wharton headshot" width="175" height="175">
+            </div>
+            
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <br>
+            <div class="portfolio-container">
+                    <div class="mnbeerflow-image">
+                        <img src="./images/portfolio/mnbeerflow-screenshot.png" alt="Brandon Wharton's MN Beer Flow project" width="250" height="505">
+                    </div>
+                    <div class="mnbeerflow-text">
+                        <h3>MN Beer Flow</h3>
+                        <p>Duration: 2-Week-Sprint</p>
+                        <p> MN Beer Flow is a mobile-first web app designed to let users find, track, rate, and comment on their favorite Minnesota
+                            breweries. Users can use their current location to find the breweries that are closest to them, as well as find a 
+                            random brewery within different distances from their location to visit.
+                        </p>
+                    </div>
+            </div>
         </section>
     
     </main>
