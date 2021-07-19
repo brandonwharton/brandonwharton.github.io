@@ -9,10 +9,15 @@ html, body {
 .nav-header {
     position: fixed;
     top: 0;
-    background-color: #112734;
+    background-color: transparent;
     width: 100%;
     padding: 1.5vh;
-    text-align: center;
+    text-align: right;
+}
+
+.nav-header.solid {
+    background-color: #112734;
+    transition: background-color 1s ease 0s;
 }
 
 .transparent {
